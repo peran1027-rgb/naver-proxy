@@ -6,7 +6,7 @@ export default async function handler(req, res) {
 
   try {
     const response = await fetch(
-      'https://naverapihub.apigw.ntruss.com/naver-datalab-shopping/v1/categories/keywords',
+      'https://naveropenapi.apigw.ntruss.com/datalab/v1/shopping/category/keywords',
       {
         method: 'POST',
         headers: {
