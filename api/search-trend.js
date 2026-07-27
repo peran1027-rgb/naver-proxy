@@ -6,13 +6,13 @@ export default async function handler(req, res) {
 
   try {
     const response = await fetch(
-      'https://naveropenapi.apigw.ntruss.com/datalab/v1/search',
+      'https://naverapihub.apigw.ntruss.com/datalab/v1/search',
       {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
-          'x-ncp-apigw-api-key-id': process.env.NCP_API_KEY_ID,
-          'x-ncp-apigw-api-key': process.env.NCP_API_KEY_SECRET,
+          'X-NCP-APIGW-API-KEY-ID': process.env.NCP_API_KEY_ID,
+          'X-NCP-APIGW-API-KEY': process.env.NCP_API_KEY_SECRET,
         },
         body: JSON.stringify(req.body)
       }
