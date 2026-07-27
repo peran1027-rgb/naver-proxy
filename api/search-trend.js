@@ -6,7 +6,7 @@ export default async function handler(req, res) {
 
   try {
     const response = await fetch(
-      'https://naveropenapi.apigw.ntruss.com/datalab/v1/search',
+      'https://naverapihub.apigw.ntruss.com/search-trend/v1/search',
       {
         method: 'POST',
         headers: {
